@@ -1,2 +1,41 @@
 @import url("./vendor/normalize.css");
 @import url("./vendor/fonts.css");
+
+:root {
+  --color-text: #1a1b22;
+  --color-muted: #6c707a;
+  --color-gray: #b6bcbf;
+  --color-border: #d1d2d6;
+  --color-surface: #f5f6f7;
+  --color-disabled: #e6e8eb;
+  --color-white: #fff;
+  --color-blue: #2f71e5;
+  --color-blue-hover: #347eff;
+  --color-blue-active: #2a65cc;
+  --color-error: #f00;
+  --font-sans: "Roboto", "Helvetica Neue", Arial, sans-serif;
+  --font-serif: "Roboto Slab", Georgia, "Times New Roman", serif;
+  --font-form: "Inter", "Helvetica Neue", Arial, sans-serif;
+  --page-gutter: 104px;
+}
+
+@media screen and (max-width: 1023px) {
+  :root {
+    --page-gutter: 40px;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  :root {
+    --page-gutter: 16px;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  color: var(--color-text);
+  background-color: var(--color-white);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}

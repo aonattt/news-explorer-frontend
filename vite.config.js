@@ -1,7 +1,9 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
 
 // https://vite.dev/config/
-export default defineConfig({
+export default defineConfig(({ command }) => ({
   plugins: [react()],
-})
+  // GitHub Pages serves the site from /news-explorer-frontend/
+  base: command === "build" ? "/news-explorer-frontend/" : "/",
+}));

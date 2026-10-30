@@ -1,0 +1,27 @@
+.news-card-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 400px));
+  justify-content: center;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.news-card-list__item {
+  display: flex;
+}
+
+@media screen and (max-width: 1023px) {
+  .news-card-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .news-card-list {
+    grid-template-columns: minmax(0, 400px);
+    gap: 10px;
+  }
+}
