@@ -40,7 +40,7 @@ function Footer() {
           </li>
           <li className="footer__socials-item">
             <a
-              href="https://www.linkedin.com/"
+              href="https://www.linkedin.com/in/aykutonat/"
               className="footer__social-link"
               target="_blank"
               rel="noopener noreferrer"
